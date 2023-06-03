@@ -11,10 +11,25 @@
     <title>K7</title>
 </head>
 <body class="bg-dark text-light">
-    <div class="container">
-        <input type="text" id="getSecurityCode">
-        <button class="btn btn-primary" id="loginCheck">Login</button>
-    </div>
+  <div class="container">
+    <h3>Liste des ventes</h3>
+    <a href="create.html" class="btn btn-warning">Ajouter une vente</a>
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th scope="col">Vente</th>
+          <th scope="col">Nombre de billets</th>
+          <th scope="col">Prix par billet</th>
+          <th scope="col">Statut</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody id="sellTableBody">
+      </tbody>
+    </table>
+  </div>
 </body>
+    <script src="assets/sell.js"></script>
+    <script src="assets/request.js"></script>
     <script src="assets/security.js"></script>
 </html>

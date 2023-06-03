@@ -11,10 +11,24 @@
     <title>K7</title>
 </head>
 <body class="bg-dark text-light">
-    <div class="container">
-        <input type="text" id="getSecurityCode">
-        <button class="btn btn-primary" id="loginCheck">Login</button>
+  <div class="container">
+    <h3>Créer une vente</h3>
+    <div class="mb-3">
+      <label for="quantityInput" class="form-label">Nombre de billets</label>
+      <input type="number" class="form-control bg-transparent text-light" id="quantityInput">
     </div>
+    <div class="mb-3">
+      <label for="priceInput" class="form-label">Prix par billet</label>
+      <input type="number" class="form-control bg-transparent text-light" id="priceInput">
+    </div>
+    <div class="mb-3">
+      <label for="statusInput" class="form-label">Statut de la commande</label>
+      <input type="text" class="form-control bg-transparent text-light" id="statusInput">
+    </div>
+    <button class="btn btn-primary" onclick="createSell()">Créer une vente</button>
+  </div>
 </body>
+    <script src="assets/sell.js"></script>
+    <script src="assets/request.js"></script>
     <script src="assets/security.js"></script>
 </html>
